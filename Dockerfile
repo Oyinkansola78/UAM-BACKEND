@@ -10,7 +10,7 @@ RUN npm install --frozen-lockfile
 
 # Copy source code
 COPY . .
-
+RUN chmod -R 755 /app
 # Build the NestJS app
 RUN npm run build
 
